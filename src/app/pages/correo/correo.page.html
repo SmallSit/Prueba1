@@ -1,0 +1,32 @@
+<ion-content > 
+  <img class ="logo" src="assets/icon/LogoDuoc.png">
+  <div class="background-container">
+      <ion-card class="login-card">
+        <ion-title class="titleduoc ion-text-center">
+          Sistema de Asistencia DuocUC
+        </ion-title>
+      </ion-card>
+  </div>
+  <div class="background-container">
+    <div class="ion-padding-vertical">
+      <ion-card class="ion-text-center ion-padding-vertical">
+        <ion-card-content class="background-container">
+          <ion-title class="ion-text-center black">Paso 1: Ingresa tu correo</ion-title>
+          <ion-card>
+        <ion-input type="text" [(ngModel)]="correo" placeholder="Ingresa tu correo"></ion-input>
+      </ion-card>
+      <a class="custom-link" (click)="validarCorreoParaRespuesta()">Recuperar contraseña</a>
+    </ion-card-content>
+  </ion-card>
+</div>
+</div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="--ion-background-color: #000000;">
+    <ion-buttons slot="start">
+      <ion-button class="boton-volver">
+        <a name="exit"(click)="irPaginaIngreso()"> Volver a Iniciar Sesión </a>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

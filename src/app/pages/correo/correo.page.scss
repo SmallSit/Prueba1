@@ -1,0 +1,80 @@
+ion-content{
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-end: 20px;
+    --padding-start: 20px;
+  }
+  ion-title{
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+  }
+  
+  ion-label {
+    width: 130px;
+  }
+  .logo {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+  }
+  ion-input {
+    border-radius: 10px !important;
+    padding-right: 0px;
+    font-size: 0.9em;
+    border: 1px solid #f1f1f1 !important;
+    --background: rgb(255, 255, 255) !important;
+    max-height: 10vh;
+    text-align: center;
+  }
+  .custom-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Elimina o ajusta el margen según tus necesidades */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .horaActual {
+    text-align: center; /* Centra el texto horizontalmente */
+    width: center;
+    margin-right:800px;
+  }
+  .foteer {
+    --background: #000000; /* Cambia el color de fondo del botón a negro (#000000) */
+    color: #FFFFFF; /* Cambia el color del texto del botón a blanco (#FFFFFF) */
+  }
+  .boton-volver {
+    color: #ffffff; /* Cambia el color del texto del botón a blanco */
+  }
+  .logo {
+    width: 500px; /* Ajusta el valor según el espacio deseado */
+    margin: 0 auto; /* Centra horizontalmente el logo */
+    display: block; /* Asegura que el logo se comporte como un bloque */
+  }
+  .background-container .ion-padding-vertical {
+    background-color: rgba(255, 255, 255, 0.8); /* RGBA con una opacidad del 80% (puedes ajustar el valor) */
+    border-radius: 10px; /* Agrega esquinas redondeadas al contenido si lo deseas */
+    font-size: 18px;
+  }
+  .login-card{
+    background-color: rgba(0, 0, 0, 0.8); /* RGBA con una opacidad del 80% (puedes ajustar el valor) */
+    border-radius: 10px; /* Agrega esquinas redondeadas al contenido si lo deseas */
+  }
+  .titleduoc {
+    justify-content: center;
+    align-items: center;
+    height: 4vh; /* Ajusta la altura según sea necesario */
+    font-size: 18px;
+  }
+  ion-content{
+    --background: url('/assets/icon/ddduoc.jpg') 0 0/100% 100% no-repeat;
+      background-size: cover;
+    }
+  .black{
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
+  }

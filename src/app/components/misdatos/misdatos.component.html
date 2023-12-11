@@ -1,0 +1,40 @@
+<ion-list class="custom-grid">
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Correo</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.correo" disabled="true"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Apellidos</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.apellido"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Pregunta secreta</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.preguntaSecreta"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Respuesta secreta</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.respuestaSecreta"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="usuario.password"></ion-input>
+  </ion-item>
+
+  <ion-item class="info-row">
+    <ion-label position="floating" class="info-label">Repetir contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="repeticionPassword"></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-button expand="full" (click)="actualizarPerfil()">
+  Actualizar mis datos
+</ion-button>

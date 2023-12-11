@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-header">
+    <ion-title #titulo class="ion-text-left ion-text">
+    <div class="logo-container">
+      <img class="logo" src="assets/icon/logo-duoc.png">
+    </div>
+  </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="componente_actual"  (ngModelChange)="cambiarComponente($event)">
+      
+      <ion-segment-button value="qr">
+        <ion-icon name="qr-code-outline"></ion-icon>
+        <ion-label>QR</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="miclase">
+        <ion-icon name="book-outline"></ion-icon>
+        <ion-label>Mi clase</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="foro">
+        <ion-icon name="megaphone-outline"></ion-icon>
+        <ion-label>Foro</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="misdatos">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Mis datos</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="soyAdmin" value="admin">
+        <ion-icon name="megaphone-outline"></ion-icon>
+        <ion-label>Admin</ion-label>
+      </ion-segment-button>
+    
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-qr [hidden]="componente_actual !== 'qr'" (qrCapturado)="cambiarComponente('miclase')"></app-qr>
+
+  <app-miclase [hidden]="componente_actual !== 'miclase'"></app-miclase>
+
+  <app-foro [hidden]="componente_actual !== 'foro'"></app-foro>
+
+  <app-misdatos [hidden]="componente_actual !== 'misdatos'"></app-misdatos>
+
+  <app-admin [hidden]="componente_actual !== 'admin'"></app-admin>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar style="--ion-background-color: #000000;">
+  <ion-buttons slot="start">
+    <ion-button (click)="cerrarSesion()" expand="block" fill="clear" shape="round" class="boton-volver">
+      <ion-icon name="exit"></ion-icon> Cerrar Sesión
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-footer>

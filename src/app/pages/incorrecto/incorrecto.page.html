@@ -1,0 +1,36 @@
+<ion-content> 
+  <img class ="logo" src="assets/icon/LogoDuoc.png">
+  <div class="background-container">
+      <ion-card class="login-card">
+        <ion-title class="titleduoc ion-text-center">
+          Sistema de Asistencia DuocUC
+        </ion-title>
+      </ion-card>
+  </div>
+ 
+  <div class="background-container">
+      <div class="ion-padding-vertical">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <ion-title class="ion-text-center black">¡Lo sentimos pero los datos ingresados no son correctos!</ion-title>
+        </ion-label>
+      </ion-card-title>
+    </div>
+  </div>
+
+  <div class="ion-text-center ion-margin-top">
+    <img src="assets/icon/sad.jpg" class="logoIncorrecto">
+  </div>
+
+  
+  
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="--ion-background-color: #000000;">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/ingreso" class="boton-volver">
+        <a name="exit"style="color: white;" (click)="irPaginaIngreso()"> Volver a Iniciar Sesión </a>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

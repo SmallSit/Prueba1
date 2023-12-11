@@ -1,0 +1,55 @@
+<ion-grid class="custom-grid">
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Sede</ion-col>
+    <ion-col size="6">{{ asistencia.sede }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Sigla de asignatura</ion-col>
+    <ion-col size="6">{{ asistencia.idAsignatura }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Sección</ion-col>
+    <ion-col size="6">{{ asistencia.seccion }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Nombre de la asignatura</ion-col>
+    <ion-col size="6">{{ asistencia.nombreAsignatura }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Nombre del profesor</ion-col>
+    <ion-col size="6">{{ asistencia.nombreProfesor }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Día</ion-col>
+    <ion-col size="6">{{ asistencia.dia }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Bloque de inicio</ion-col>
+    <ion-col size="6">
+      <span *ngIf="asistencia.bloqueInicio > 0">{{ asistencia.bloqueInicio }}</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Bloque de término</ion-col>
+    <ion-col size="6">
+      <span *ngIf="asistencia.bloqueTermino > 0">{{ asistencia.bloqueTermino }}</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Hora de inicio</ion-col>
+    <ion-col size="6">{{ asistencia.horaInicio }}</ion-col>
+  </ion-row>
+
+  <ion-row class="info-row">
+    <ion-col size="6" class="info-label">Hora de término</ion-col>
+    <ion-col size="6">{{ asistencia.horaFin }}</ion-col>
+  </ion-row>
+</ion-grid>
